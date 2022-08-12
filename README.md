@@ -55,11 +55,11 @@ We design a system that maintains two graphs and runs up to 10x faster than real
 
 This is the original ROS1 implementation of LIO-SAM. For a ROS2 implementation see branch `ros2`.
 
-- [ROS](http://wiki.ros.org/ROS/Installation) (tested with Kinetic and Melodic. Refer to [#206](https://github.com/TixiaoShan/LIO-SAM/issues/206) for Noetic)
+- [ROS](http://wiki.ros.org/ROS/Installation) (tested with Neotic.)
   ```
-  sudo apt-get install -y ros-kinetic-navigation
-  sudo apt-get install -y ros-kinetic-robot-localization
-  sudo apt-get install -y ros-kinetic-robot-state-publisher
+  sudo apt-get install -y ros-Neotic-navigation
+  sudo apt-get install -y ros-Neotic-robot-localization
+  sudo apt-get install -y ros-Neotic-robot-state-publisher
   ```
 - [gtsam](https://gtsam.org/get_started/) (Georgia Tech Smoothing and Mapping library)
   ```
@@ -149,6 +149,7 @@ The user needs to prepare the point cloud data in the correct format for cloud d
 
 1. Run the launch file:
 ```
+source devel/setup.bash
 roslaunch lio_sam run.launch
 ```
 
